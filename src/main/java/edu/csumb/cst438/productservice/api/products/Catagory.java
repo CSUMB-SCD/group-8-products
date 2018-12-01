@@ -10,7 +10,6 @@ public class Catagory {
     public String name;
     public String description;
 
-
     public Catagory() {}
 
     public Catagory(String name, String description) {
