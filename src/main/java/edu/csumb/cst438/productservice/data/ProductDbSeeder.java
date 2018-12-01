@@ -50,7 +50,7 @@ public class ProductDbSeeder implements CommandLineRunner{
         Product VengeanceRGBPro4x8 = new Product("Vengeance RGB Pro 32GB", "(4 x 8GB) 288-Pin DDR4 DRAM DDR4 3000 (PC4 24000)", 10, 299.99, Memory, Corsair, "https://i.imgur.com/Zv3rugZ.jpg");
 
         productRepo.deleteAll();
-        List<Product> products = Arrays.asList(ryzen3, ryzen5, ryzen7);
+        List<Product> products = Arrays.asList(ryzen3, ryzen5, ryzen7, i3, i5, i7, rxvega, rx590, rx480, geforcertx2080, ripjawsV2x4, VengeanceLPX2x8, VengeanceRGBPro4x8);
         productRepo.saveAll(products);
     }
 
