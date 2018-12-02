@@ -1,6 +1,7 @@
 package edu.csumb.cst438.productservice.data;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,11 @@ public class ProductDbSeeder implements CommandLineRunner{
         Manufacturer GSkill = new Manufacturer("GSkill", "G.Skill Computer hardware company");
         Manufacturer Corsair = new Manufacturer("Corsair", "Corsair Components Computer hardware company");
         //products
-        Product ryzen3 = new Product("ryzen 3", "Most affordable ryzen processor", 10, 99.99, CPU, AMD, "https://i.imgur.com/bDuAH8E.jpg");
+        ArrayList<String> ryzen3Hi = new ArrayList<String>();
+        ryzen3Hi.add("https://i.imgur.com/NLiFuuq.jpg");
+        ryzen3Hi.add("https://i.imgur.com/zqSuNr7.jpg");
+
+        Product ryzen3 = new Product("ryzen 3", "Most affordable ryzen processor", 10, 99.99, CPU, AMD, "https://i.imgur.com/bDuAH8E.jpg", ryzen3Hi);
         Product ryzen5 = new Product("ryzen 5", "Middle ground ryzen processor", 10, 159.99, CPU, AMD, "https://i.imgur.com/Yu8JjTG.jpg");
         Product ryzen7 = new Product("ryzen 7", "Highest performence ryzen processor", 10, 309.99, CPU, AMD, "https://i.imgur.com/q0slPAN.jpg");
         
