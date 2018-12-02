@@ -1,6 +1,7 @@
 package edu.csumb.cst438.productservice.api.products;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
@@ -16,7 +17,7 @@ public class Product {
     public Catagory catagory;
     public Manufacturer manufacturer;
     public String lo_rez;
-    public ArrayList<String> hi_rez;
+    public List<String> hi_rez;
 
     public Product() {}
 
