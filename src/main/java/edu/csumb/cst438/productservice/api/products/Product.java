@@ -1,5 +1,7 @@
 package edu.csumb.cst438.productservice.api.products;
 
+import java.util.ArrayList;
+
 import org.springframework.data.annotation.Id;
 
 public class Product {
@@ -13,7 +15,8 @@ public class Product {
     public double price;
     public Catagory catagory;
     public Manufacturer manufacturer;
-
+    public String lo_rez;
+    public ArrayList<String> hi_rez;
 
     public Product() {}
 
@@ -24,6 +27,17 @@ public class Product {
         this.price = price;
         this.catagory = catagory;
         this.manufacturer = manufacturer;
+    }
+
+    public Product(String name, String description, int stock, double price, Catagory catagory, Manufacturer manufacturer, String lo_rez, ArrayList<String> hi_rez) {
+        this.name = name;
+        this.description = description;
+        this.stock = stock;
+        this.price = price;
+        this.catagory = catagory;
+        this.manufacturer = manufacturer;
+        this.lo_rez = lo_rez;
+        this.hi_rez = hi_rez;
     }
 
     @Override
