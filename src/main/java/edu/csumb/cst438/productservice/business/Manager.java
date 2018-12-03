@@ -19,7 +19,8 @@ public class Manager{
     }
 
     public boolean removeStock(Payload payload) throws Exception {
-        return productDbClient.removeStock(payload);
+        payload.product.stock = payload.product.stock - payload.amount;
+        return productDbClient.save(payload.product);
         
     }
 }
