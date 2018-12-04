@@ -1,5 +1,6 @@
 package edu.csumb.cst438.productservice.api;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,9 +34,10 @@ public class ProductController {
 
     @CrossOrigin
     @RequestMapping(value="/removeStock", method = RequestMethod.POST)
-    public Boolean removeStock(@RequestBody Payload payload) throws Exception {
-        return manager.removeStock(payload);
-        
+    public List<Boolean> removeStock(@RequestBody Payload payload) throws Exception {
+        ArrayList<Boolean> result = new ArrayList<Boolean>();
+        result.add(manager.removeStock(payload));
+        return result;        
     }
 
     @GetMapping("/")
