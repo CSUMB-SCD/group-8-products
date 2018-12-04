@@ -38,13 +38,13 @@ public class ProductDbSeeder implements CommandLineRunner{
         ryzen3Hi.add("https://i.imgur.com/zqSuNr7.jpg");
         ryzen3Hi.add("https://i.imgur.com/pZIpKq9.jpg");
 
-        ryzen5hi.add("https://i.imgur.com/Vgeo3kw.jpg");
-        ryzen5hi.add("https://i.imgur.com/lE5sih4.jpg");
-        ryzen5hi.add("https://i.imgur.com/jUAXQqk.jpg");
+        ryzen5Hi.add("https://i.imgur.com/Vgeo3kw.jpg");
+        ryzen5Hi.add("https://i.imgur.com/lE5sih4.jpg");
+        ryzen5Hi.add("https://i.imgur.com/jUAXQqk.jpg");
 
-        ryzen7hi.add("https://i.imgur.com/5yLnpkr.jpg");
-        ryzen7hi.add("https://i.imgur.com/jjzmkwP.jpg");
-        ryzen7hi.add("https://i.imgur.com/mV3M8ag.jpg");
+        ryzen7Hi.add("https://i.imgur.com/5yLnpkr.jpg");
+        ryzen7Hi.add("https://i.imgur.com/jjzmkwP.jpg");
+        ryzen7Hi.add("https://i.imgur.com/mV3M8ag.jpg");
 
         ArrayList<String> i3i = new ArrayList<String>();
         ArrayList<String> i5i = new ArrayList<String>();
