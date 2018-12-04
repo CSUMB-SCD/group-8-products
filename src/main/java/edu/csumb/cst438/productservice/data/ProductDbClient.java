@@ -34,6 +34,4 @@ public class ProductDbClient {
         repository.save(newProduct);
 		return true;
 	}
-
-
 }
