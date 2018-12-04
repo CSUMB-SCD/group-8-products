@@ -32,8 +32,71 @@ public class ProductDbSeeder implements CommandLineRunner{
         Manufacturer Corsair = new Manufacturer("Corsair", "Corsair Components Computer hardware company");
         //products
         ArrayList<String> ryzen3Hi = new ArrayList<String>();
+        ArrayList<String> ryzen5Hi = new ArrayList<String>();
+        ArrayList<String> ryzen7Hi = new ArrayList<String>();
         ryzen3Hi.add("https://i.imgur.com/NLiFuuq.jpg");
         ryzen3Hi.add("https://i.imgur.com/zqSuNr7.jpg");
+        ryzen3Hi.add("https://i.imgur.com/pZIpKq9.jpg");
+
+        ryzen5hi.add("https://i.imgur.com/Vgeo3kw.jpg");
+        ryzen5hi.add("https://i.imgur.com/lE5sih4.jpg");
+        ryzen5hi.add("https://i.imgur.com/jUAXQqk.jpg");
+
+        ryzen7hi.add("https://i.imgur.com/5yLnpkr.jpg");
+        ryzen7hi.add("https://i.imgur.com/jjzmkwP.jpg");
+        ryzen7hi.add("https://i.imgur.com/mV3M8ag.jpg");
+
+        ArrayList<String> i3 = new ArrayList<String>();
+        ArrayList<String> i5 = new ArrayList<String>();
+        ArrayList<String> i7 = new ArrayList<String>();
+		
+        i3.add("https://i.imgur.com/vgQDoPM.jpg");
+        i3.add("https://i.imgur.com/3DWPKST.jpg");
+        i3.add("https://i.imgur.com/qsYbJgY.jpg");
+        i5.add("https://i.imgur.com/sXwIN6v.jpg");
+        i5.add("https://i.imgur.com/W17KhcA.jpg");
+        i5.add("https://i.imgur.com/tmDDZ5J.jpg");		
+        i7.add("https://i.imgur.com/fsKSCu7.jpg");
+        i7.add("https://i.imgur.com/daucpue.jpg");
+        i7.add("https://i.imgur.com/oNfoh3h.jpg");
+
+		
+        ArrayList<String> rxvega = new ArrayList<String>();
+        ArrayList<String> rx590 = new ArrayList<String>();
+        ArrayList<String> rx480 = new ArrayList<String>();
+		
+        rxvega.add("https://i.imgur.com/zrPYHNo.jpg");
+        rxvega.add("https://i.imgur.com/fKJKisS.jpg");
+        rxvega.add("https://i.imgur.com/jOs5rhv.jpg");
+
+        rx590.add("https://i.imgur.com/djobXEE.jpg");
+        rx590.add("https://i.imgur.com/43Rc4Mu.jpg");
+        rx590.add("https://i.imgur.com/5EGgvXl.jpg");
+		
+        rx480.add("https://i.imgur.com/WaGejd9.jpg");
+        rx480.add("https://i.imgur.com/xg2Xnxp.png");
+        rx480.add("https://i.imgur.com/d6vdAOk.jpg");
+
+		
+        ArrayList<String> geforcertx2080 = new ArrayList<String>();		
+        geforcertx2080.add("https://i.imgur.com/qSkQYv5.jpg");
+        geforcertx2080.add("https://i.imgur.com/SbHSP8f.jpg");
+        geforcertx2080.add("https://i.imgur.com/SbHSP8f.jpg");
+
+        ArrayList<String> ripjawsV2x4 = new ArrayList<String>();		
+        ripjawsV2x4.add("https://i.imgur.com/9NA41Su.jpg");
+        ripjawsV2x4.add("https://i.imgur.com/N2Hz4lj.png");
+        ripjawsV2x4.add("https://i.imgur.com/nP4IDCf.jpg");
+
+        ArrayList<String> VengeanceLPX2x8 = new ArrayList<String>();
+        VengeanceLPX2x8.add("https://i.imgur.com/m28pEvB.jpg");
+        VengeanceLPX2x8.add("https://i.imgur.com/0tE7w7e.jpg");
+        VengeanceLPX2x8.add("https://i.imgur.com/Q0bbjzM.jpg");
+
+        ArrayList<String> VengeanceRGBPro4x8 = new ArrayList<String>();
+        VengeanceRGBPro4x8.add("https://i.imgur.com/sBAT9zn.jpg");
+        VengeanceRGBPro4x8.add("https://i.imgur.com/fHFoFrW.jpg");
+        VengeanceRGBPro4x8.add("https://i.imgur.com/lprbi44.png");
 
         Product ryzen3 = new Product("ryzen 3", "Ryzen 3 is a family of low-end performance 64-bit quad-core x86 microprocessors introduced by AMD in late-2017. Ryzen 3 is based on the Zen microarchitecture and is manufactured on GF's 14 nm process. Ryzen 3 is marketed toward the low-end performance market. The Ryzen 3 is positioned against Intel's low-end mainstream Core i3 processors, offering competitive performance at lower prices", 10, 99.99, CPU, AMD, "https://i.imgur.com/bDuAH8E.jpg", ryzen3Hi);
         Product ryzen5 = new Product("ryzen 5", "Ryzen 5 is a family of mid-range performance 64-bit quad and hexa-cores x86 microprocessors introduced by AMD in March of 2017. Ryzen 5 is based on the Zen microarchitecture and is manufactured on GF's 14 nm process. Ryzen 5 is marketed toward the mid-range performance market. The Ryzen 5 is positioned against Intel's mid-range mainstream Core i5 processors, offering competitive performance at lower prices.", 10, 159.99, CPU, AMD, "https://i.imgur.com/Yu8JjTG.jpg");
