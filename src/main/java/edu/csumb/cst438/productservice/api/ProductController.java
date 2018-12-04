@@ -33,7 +33,7 @@ public class ProductController {
 
     @CrossOrigin
     @RequestMapping(value="/removeStock", method = RequestMethod.POST)
-    public boolean removeStock(@RequestBody Payload payload) throws Exception {
+    public Boolean removeStock(@RequestBody Payload payload) throws Exception {
         return manager.removeStock(payload);
         
     }
